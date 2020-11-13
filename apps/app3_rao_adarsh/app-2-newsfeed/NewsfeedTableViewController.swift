@@ -47,6 +47,7 @@ class NewsfeedTableViewController: UITableViewController {
         
         if let picture = cell.viewWithTag(2) as? UIImageView{
             if (newsItems[indexPath.row].favorited) {
+                print(UIImage(named: "star-filled"))
                 picture.image = UIImage(named: "star-filled");
             } else {
                 picture.image = UIImage(named: "star-hollow");
